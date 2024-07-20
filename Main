@@ -7,7 +7,7 @@ local Section = Tab:NewSection("Welcome To Chrome Heart.")
 local Section = Tab:NewSection("Chu And Balo Is A Bitch By The Way.")
 local Section = Tab:NewSection("Scripted And Made By Fool.")
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
+Section:NewButton("Click Me!", "Secret Link.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LoveMoneyFraud/clipboard-1/main/of%20link", true))()
 end)
 
