@@ -1,0 +1,166 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Chrome Heart", "LightTheme")
+
+
+local Tab = Window:NewTab("Home")
+local Section = Tab:NewSection("Welcome To Chrome Heart.")
+local Section = Tab:NewSection("Chu And Balo Is A Bitch By The Way.")
+local Section = Tab:NewSection("Scripted And Made By Fool.")
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LoveMoneyFraud/clipboard-1/main/of%20link", true))()
+end)
+
+Section:NewKeybind("Keybind To Open And Close", "Change Gui Keybind To Anything", Enum.KeyCode.E, function()
+	Library:ToggleUI()
+end)
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Main Script")
+
+Section:NewToggle("Purple ESP", "Toggle On/Off", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/TYnTXzUL"))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/KukKruP5"))()
+    end
+end)
+
+Section:NewSlider("Invisible Hitbox", "Invisble Hitbox Extander (Size 0-15)", 15, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    _G.HeadSize = s _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.HumanoidRootPart.Transparency = 1.0 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
+end)
+
+local Section = Tab:NewSection("PC ONLY")
+
+Section:NewButton("Aimlock", "First Person Aimlock", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LoveMoneyFraud/AimLock/main/main", true))()
+end)
+
+Section:NewButton("Triggerbot", "Auto Shoot For You", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/RU0L87E6"))()
+end)
+
+local Tab = Window:NewTab("Aerial")
+local Section = Tab:NewSection("Teleport Spots")
+
+Section:NewButton("Middle Crates", "Teleport To Middle Crates", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-261.800048828125, 49.7499885559082, 237.81439208984375)
+end)
+
+Section:NewButton("Spawn A", "Teleport To Spawn A", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-206.36917114257812, 62.33999252319336, 155.25254821777344)
+end)
+
+Section:NewButton("Spawn B", "Teleport To Spawn B", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-163.34825134277344, 63.69999694824219, 271.1450500488281)
+end)
+
+Section:NewButton("Tunnel", "Teleport To Tunnel", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-204.49417114257812, 49.74644470214844, 214.832275390625)
+end)
+
+local Tab = Window:NewTab("Ridge")
+local Section = Tab:NewSection("Teleport Spots")
+
+Section:NewButton("Middle A", "Teleport To Middle A", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-156.09837341308594, 172.12472534179688, 9.440720558166504)
+end)
+
+Section:NewButton("Middle B", "Teleport To Middle B", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-165.81700134277344, 172.1247100830078, 0.37166664004325867)
+end)
+
+Section:NewButton("Spawn A", "Teleport To Spawn A", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-173.9408721923828, 155.62472534179688, 91.90729522705078)
+end)
+
+Section:NewButton("Spawn B", "Teleport To Spawn B", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-149.45318603515625, 155.62472534179688, -84.25575256347656)
+end)
+
+Section:NewButton("Rope A", "Teleport To Rope A", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-189.28431701660156, 168.02780151367188, 54.23576354980469)
+end)
+
+Section:NewButton("Rope B", "Teleport To Rope B", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-134.3944091796875, 167.9344940185547, -46.798973083496094)
+end)
+
+local Tab = Window:NewTab("Central")
+local Section = Tab:NewSection("Teleport Spots")
+
+Section:NewButton("Main Middle", "Teleport To Main Middle", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-110.84935760498047, 105.0000991821289, -257.3758239746094)
+end)
+
+Section:NewButton("Spawn A", "Teleport To Spawn A", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-117.60995483398438, 106.24996948242188, -194.66940307617188)
+end)
+
+Section:NewButton("Spawn B", "Teleport To Spawn B", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-96.84383392333984, 106.24996948242188, -322.7932434082031)
+end)
+
+Section:NewButton("Ladder A", "Teleport To Ladder A", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-133.9921112060547, 121.9999771118164, -219.10523986816406)
+end)
+
+Section:NewButton("Ladder B", "Teleport To Ladder B", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-116.97540283203125, 121.9999771118164, -298.9690246582031)
+end)
+
+Section:NewButton("Crates", "Teleport To Crates", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-161.7276611328125, 99.05000305175781, -282.2738037109375)
+end)
+
+
+local Tab = Window:NewTab("Prototype")
+local Section = Tab:NewSection("Teleport Spots")
+
+Section:NewButton("Foo Spot", "Teleport To Foo Spot", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6.370314598083496, 63.9999885559082, 19.369543075561523)
+end)
+
+Section:NewButton("Middle Boxes", "Teleport To Middle Boxes", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(42.06312942504883, 63.9999885559082, 31.01914405822754)
+end)
+
+Section:NewButton("Spawn A", "Teleport To Spawn A", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(84.82796478271484, 64, 71.22931671142578)
+end)
+
+Section:NewButton("Spawn B", "Teleport To Spawn B", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(22.364944458007812, 64, -73.35688018798828)
+end)
+
+Section:NewButton("Stairs A", "Teleport To Stairs A", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(95.42998504638672, 72.99999237060547, 32.40888214111328)
+end)
+
+
+Section:NewButton("Stairs B", "Teleport To Stairs B", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6.683543682098389, 81.9999771118164, -28.668949127197266)
+end)
+
+local Tab = Window:NewTab("Lodge")
+local Section = Tab:NewSection("Teleport Spots")
+
+Section:NewButton("Basement", "Teleport To Basement", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(198.75155639648438, 47.87001419067383, 6.733177661895752)
+end)
+
+Section:NewButton("Closet", "Teleport To Closet", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(254.3095703125, 60.77000045776367, -24.2946720123291)
+end)
+
+Section:NewButton("Fireplace", "Teleport To Fireplace", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(279.6898498535156, 58.06562042236328, 54.729042053222656)
+end)
+
+Section:NewButton("Outside", "Teleport Outside ", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(178.08810424804688, 57.77000045776367, 48.77677536010742)
+end)
+
+Section:NewButton("Bedroom", "Teleport To Bedroom", function()
+     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(204.61715698242188, 58.77000045776367, -70.6336898803711)
+end)
